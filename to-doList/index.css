@@ -3,3 +3,119 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.container{
+    position: absolute;
+    content: "Hi";
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f, #f2f2f2);
+}
+
+.todo-app{
+    width: 60vw;
+    min-height: 20vh;
+    background-color: #f2f2f2;
+    border-radius: 3vw;
+    margin: 3vw 5vw 5vw 20vw;
+}
+
+.logo{
+    display: flex;
+    padding: 0.5vw 0vw 0vw 2vw;
+    width: 100%;
+    
+}
+h2{
+    font-size: 2vw;
+    color: #153677;
+    line-height: 5vw;
+}
+
+.logo .icon{
+    width: 4vw;
+    height: 4vw;
+}
+
+.row{
+    display: flex;
+    width: 86%;
+    margin: auto;
+    align-items: center;
+}
+
+input{
+    flex: 1;
+    height: 3vw;
+    border: none;
+    outline: none;
+    padding-left:2vw;
+    line-height: 3vw;
+    border-radius: 2vw;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: rgb(4, 4, 0)
+}
+
+#addBtn{
+    border: none;
+    outline: none;
+    width: 8vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    border-radius: 2vw;
+    background-color: orangered;
+    margin-left: -4vw;
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+}
+
+#addBtn:hover{
+    color: greenyellow;
+}
+
+ul li{
+    padding: 1vw 0vw 2vw 7vw;
+    list-style: none;
+    font-size: 1.8vw;
+    line-height: 1vw;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+  
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 1.8vw;
+    width: 1.8vw;
+    top: 0.8vw;
+    left:4vw;
+    border-radius: 50%;
+    background-image: url("./images/unchecked.png");
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url("./images/checked.png");
+}
+
+span{
+    position: absolute;
+    right: 5vw;
+    width: 2vw;
+    height: 2vw;
+    line-height: 2vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+span:hover{
+    background-color: gray;
+}

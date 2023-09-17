@@ -1,0 +1,17 @@
+linear gradient(135 dg,#153677,#4e085f)
+
+felx =1
+
+use of after and before tags
+
+
+appendChild
+
+createElement
+
+e.target.tagname===''
+target.parentelement.remove()
+
+false
+
+localStorage get item and set item
