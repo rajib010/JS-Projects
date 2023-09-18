@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3vw;
+    margin: 5vw 0vw 5vw 0vw;
+    text-align: center;
+}
+
+.search-form {
+    width: 80%;
+    height: 5vw;
+    margin: 2vw auto;
+    display: flex;
+    align-items: center;
+}
+
+#search-for {
+    flex: 1;
+    height: 5vw;
+    padding: 0vw 3vw;
+    font-size: 1.5vw;
+    border-radius: 1vw 0vw 0vw 1vw;
+    border: none;
+    font-weight: bold;
+    outline: none;
+}
+
+::placeholder {
+    font-size: large;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: white;
+    padding: 1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+#search-btn {
+    height: 5vw;
+    width: 10vw;
+    border-radius: 0vw 1vw 1vw 0vw;
+}
+
+p{
+    width: 90%;
+    margin: auto;
+    color: white;
+    font-size: 2vw;
+    margin: 2vw 5vw;
+}
+
+
+.search-results {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.search-results img {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    border-radius: 0.6vw;
+}
+
+#show-moreBtn {
+    height: 3vw;
+    width: 8vw;
+    border-radius: 0.5vw;
+    padding: 0vw;
+    display: none;
+    line-height: 3vw;
+    margin: 3vw 0vw;
+    transition: all ease 0.5s;
+    margin-left: calc(50% - (7vw / 2));
+}
+
+#show-moreBtn i {
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px){
+
+    h1{
+        font-size: 5vw;
+    }
+
+    .search-form{
+        height: 9vw;
+    }
+
+    #search-for{
+        height: 9vw;
+        line-height: 9vw;
+        font-size: 3.3vw;
+    }
+
+    ::placeholder{
+        font-size: 3vw;
+    }
+
+   #search-btn{
+        height: 9vw;
+        width: 15vw;
+        font-size: 2.5vw;
+    }
+
+    p{
+        font-size: 3vw;
+    }
+
+    .search-results{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.6vw;
+    }
+    .search-results img{
+        height: 40vw;
+    }
+
+    #show-moreBtn{
+        height: 9vw;
+        width: 15vw;
+        font-size: 3vw;
+    }
+    #show-moreBtn i{
+        font-size: 3vw;
+    }
+
+}
