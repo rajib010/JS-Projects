@@ -5,12 +5,14 @@
 }
 
 body {
-    background: black;
+    background: linear-gradient(to right, #1d1c1c 0%, #504c4c 100%)
+    ;
 }
 
 h1 {
     color: #fff;
     font-size: 3vw;
+    font-family: 'Bree Serif', sans-serif;
     margin: 5vw 0vw 5vw 0vw;
     text-align: center;
 }
@@ -61,7 +63,7 @@ button {
 p{
     width: 90%;
     margin: auto;
-    color: white;
+    color: #fff;
     font-size: 2vw;
     margin: 2vw 5vw;
 }
@@ -129,6 +131,7 @@ p{
 
     p{
         font-size: 3vw;
+        line-height: 4.5vw;
     }
 
     .search-results{

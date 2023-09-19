@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #030a22;
+
+}
+h1{
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.container{
+    width: 45%;
+    margin: 5vw auto;
+    min-height: 50vh;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left,.right{
+    border: 2px dotted white;
+    width: 20vw;
+    min-height: 30vw;
+}
+
+.list{
+    width: 98%;
+    height: 3vw;
+    line-height: 3vw;
+    background-color: red;
+    margin: 0.5vw auto;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    border-radius: 0.2vw;
+}
