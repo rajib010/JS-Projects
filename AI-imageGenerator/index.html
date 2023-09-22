@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h1>AI Image Generator</h1>
+            <p>This is a powerful tool which is used to generate random images according to the requirement of the user.
+                Images are generated as per the prompt and are available for download as well as other uses.
+            </p>
+            <form class="myForm">
+                <input type="text" class="img-description" autocomplete="off"
+                    placeholder="Enter the description of image you want to generate..." required>
+                <div class="controls">
+                    <select name="noOfImages" class="img-quantity">
+                        <option selected>Images</option>
+                        <option value="1">1 Images</option>
+                        <option value="2">2 Images</option>
+                        <option value="3">3 Images</option>
+                        <option value="4">4 Images</option>
+                    </select>
+                    <button type="submit" class="submitBtn">Generate</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="img-gallery">
+        <div class="img-card">
+            <img src="./images/img-1.jpg" alt="img">
+        </div>
+        <div class="img-card">
+            <img src="./images/img-2.jpg" alt="img">
+        </div>
+        <div class="img-card">
+            <img src="./images/img-3.jpg" alt="img">
+        </div>
+        <div class="img-card">
+            <img src="./images/img-4.jpg" alt="img">
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
